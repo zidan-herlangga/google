@@ -1,0 +1,160 @@
+:root {
+  --color-primary: rgba(0, 0, 0, 0.65);
+  --color-secondary: ;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* padding: 10px 20px; */
+  height: 70px;
+  width: 100%;
+}
+
+.header__right {
+  display: flex;
+
+  padding: 10px 20px;
+}
+
+.header__right a {
+  font-size: 13px;
+  margin-right: 16px;
+  color: var(--color-primary);
+}
+
+.header__right a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  display: flex;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.icon span {
+  font-size: 24px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+.feature {
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.feature img {
+  width: 285px;
+  height: auto;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 730px;
+  padding: 25px;
+  width: 100%;
+}
+
+.search__input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid var(--color-primary);
+  border-radius: 99px;
+}
+
+.search__input:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search__input span {
+  /* padding: 1px; */
+  margin: 4px;
+}
+
+.photo {
+  cursor: pointer;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.search__action {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.search__action button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  font-size: 12.5px;
+}
+
+.language a {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .header__right {
+    display: flex;
+    margin-block-end: -10px;
+    margin-inline: -30px;
+  }
+
+  .header__right a {
+    font-size: 12px;
+  }
+
+  .feature img {
+    height: auto;
+    width: 150px;
+  }
+
+  .search__action button {
+    padding: 10px 8px;
+  }
+
+  .language {
+    font-size: 10px;
+  }
+}

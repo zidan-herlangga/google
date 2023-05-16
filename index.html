@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+
+    <!-- WebCam -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"
+    ></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Material CSS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header__right">
+        <a href="https://mail.google.com/">Gmail</a>
+        <a href="https://www.google.co.id/imghp?hl=id&ogbl">Gambar</a>
+        <div class="icon">
+          <a href="#icon1">
+            <span class="material-icons">apps</span>
+          </a>
+          <a href="#icon2">
+            <span class="material-icons">account_circle</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="feature">
+        <img
+          src="https://www.google.com.sg/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="google-logo"
+        />
+        <div class="search">
+          <div class="search__input">
+            <span class="material-icons">search</span>
+            <input id="searchInput" type="text" placeholder="Search" />
+            <span onclick="takeAPicture()" class="material-icons photo"
+              >photo_camera</span
+            >
+          </div>
+          <div class="search__action">
+            <button onclick="cari()">Penelusuran Google</button>
+            <button>Saya Lagi Beruntung</button>
+          </div>
+          <div class="language">
+            Google tersedia dalam bahasa:
+            <a href="">Inggris</a>
+            <a href="">Indonesia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Webcam DEMO start -->
+    <!-- <section>
+      <video
+        id="webCam"
+        style="transform: scale(-1, 1)"
+        width="640"
+        height="480"
+      ></video>
+      <canvas
+        id="canvas"
+        style="transform: scale(-1, 1)"
+        width="640"
+        height="480"
+      ></canvas>
+    </section> -->
+    <!-- Webcam DEMO end -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
